@@ -5,13 +5,6 @@ Jigsaw SPA using Angular & jQuery UI
 
 ##
 
-Created by Dan Walsh
-
-  contact email - hello@danwalsh.co
-  contact number - 07581487612
-
-##
-
 To run the application, run a server from the directory, e.g.
 
 npm install -g http-server
