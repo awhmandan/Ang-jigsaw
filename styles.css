@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLES START HERE */
+
+body { 
+	background-color: #fffff0;
+	text-align: center;
+	vertical-align: middle;
+	background: url("http://i.imgur.com/ExUc1C8.png") no-repeat;
+	background-size: cover;
+}
+
+#main {
+	bottom: 0; 
+	padding-top: 0;
+	position: absolute;
+    text-align: center;
+    top: 0;  
+    width: 100%; 
+    font-family: 'Ubuntu', 'Helvetica', sans-serif;
+}
+
+#intro-header {
+	padding-top: 1%;
+}
+
+hr {
+	width: 80%;
+}
+
+#intro {
+	padding-top: 1%;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+button { 
+	height: 2.5%;
+	width: 9%;
+	color: #ffffff;
+	background-color: #4D7F7A;
+	border-radius: 7%;
+}
+
+button:hover {
+	color: #ffffff;
+	background-color: #74BFB6;
+}
+
+.pieces {
+	width: 100px;
+	height: 100px;
+}
+
+#starting-pieces {
+	height: 100%;
+	width: 60%;
+	display: inline-block;
+	margin: 1.1em;
+	padding: 1.1em;
+}
+
+.container {
+	width: 420px;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.grid-square {
+	height: 98px;
+	width: 98px;
+	margin: 0;
+	padding: 0;
+	border: 1.5px solid black;
+	display: inline-block;
+}
+
+#update {
+	height: 2.5%;
+	display: none;
+}
+
+.final-image {
+	height: 408px;
+	width: 380px;
+}
+
+#home {
+	float: right;
+	margin-right: 5%;
+	margin-bottom: 3%;
+
+}
+
+.ng-enter {
+	animation: scaleUp 0.5s both ease-in; z-index: 8888;
+}
+    
+.ng-leave { 
+	animation: slideOutLeft 0.5s both ease-in; z-index: 9999;
+}
+
+
+/* leaving animations ----------------------------------------- */
+
+/* slide out to the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* entering animations --------------------------------------- */
+
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+

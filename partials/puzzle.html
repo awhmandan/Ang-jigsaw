@@ -1,0 +1,42 @@
+<div id='starting-pieces'>
+		<span >
+	
+			<img draggable class='pieces' ng-repeat="image in pieces | orderBy:random" data-index='{{image.id}}' ng-src='{{image.path}}'>
+
+		</span>
+</div>
+
+<hr>
+
+	<button  ng-click="countDrop()" >
+  		Check
+	</button>
+	<br>
+	<br>
+	<span id='update'></span>
+
+<hr>
+<br>
+
+<div  class='container'>
+	<div droppable class="grid-square " data-id='a' data-index='1'></div>
+	<div droppable class="grid-square " data-id='b' data-index='2'></div>
+	<div droppable class="grid-square " data-id='c' data-index='3'></div>
+	<div droppable class="grid-square " data-id='d' data-index='4'></div>
+	<div droppable class="grid-square " data-id='e' data-index='5'></div>
+	<div droppable class="grid-square " data-id='f' data-index='6'></div>
+	<div droppable class="grid-square " data-id='g' data-index='7'></div>
+	<div droppable  class="grid-square " data-id='h' data-index='8'></div>
+	<div droppable class="grid-square " data-id='i' data-index='9'></div>
+	<div droppable  class="grid-square " data-id='j' data-index='10'></div>
+	<div droppable class="grid-square " data-id='k' data-index='11'></div>
+	<div droppable class="grid-square " data-id='l' data-index='12'></div>
+	<div droppable class="grid-square " data-id='m' data-index='13'></div>
+	<div droppable class="grid-square " data-id='n' data-index='14'></div>
+	<div droppable class="grid-square " data-id='o' data-index='15'></div>
+	<div droppable class="grid-square " data-id='p' data-index='16'></div>
+</div>
+
+<button id='home' ng-click="changeView('/')">
+  	Return home
+</button>
